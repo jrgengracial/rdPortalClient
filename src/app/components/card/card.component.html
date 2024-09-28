@@ -20,7 +20,7 @@
     <ng-container *ngIf="filteredLists.length > 0; else noResults">
       <div class="col-md-4 mb-4" *ngFor="let item of filteredLists">
         <div class="card h-100 shadow-lg border-0">
-          <img [src]="item.img" class="card-img-top" alt="{{item.name}}" style="object-fit: contain; height: 200px;">
+          <img [src]="item.img" class="card-img-top" alt="{{item.name}}" style="object-fit: contain; height: 250px;">
           <div class="card-body">
             <h4 class="card-title">{{ item.name }}</h4>
             <a [href]="item.url" target="_blank" class="card-link">

@@ -37,10 +37,10 @@ export class CardComponent {
     { name: "E-Purchasing", 
       url: "https://portalv3.rdpawnshop.com/EPurchasingV2/Login", 
       description: "jkasgdkjasgdjagsdsjagdjkasdsasjkdasdjagsdassadas", img: "Epurchasing.PNG"},
-    { name: "RD OperationV2",
+    { name: "RD Operation V2",
        url: "https://portalv3.rdpawnshop.com/RDOperationV2/Account/Login.aspx",
         description: "jkasgdkjasgasjgdkjasgdkjsagdjksadjksagdjkasgdasjddj", img: "RDOpsV2.PNG"},
-    { name: "RD OperationV3",
+    { name: "RD Operation V3",
        url: "https://portalv2.rdpawnshop.com/RDOperationV3",
         description: "jkasgdkjasgdjd", img: "RDOpsV3.PNG" },    
   ];
