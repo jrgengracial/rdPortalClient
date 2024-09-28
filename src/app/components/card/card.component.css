@@ -1,0 +1,47 @@
+.container {
+    margin-top: 100px; 
+  }
+  
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+     background-color: #FFD700;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title a {
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .card-title a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .card-text {
+    color: #343a40;
+  }
+  
+  .card-img-top {
+    border-bottom: 1px solid  #A9A9A9;
+  }
+  .card-link{
+    text-decoration: none;
+  }
+  
+  .search-input{
+    border-radius: 0.5rem; 
+    transition: border-color 0.3s;
+    border-color: #800000;
+  }
+
+
