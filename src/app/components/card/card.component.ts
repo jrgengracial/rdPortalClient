@@ -39,7 +39,6 @@ export class CardComponent {
     { name: "RD Operation V3",
        url: "https://portalv2.rdpawnshop.com/RDOperationV3",
          img: "RDOPSV3.png" },    
-         
   ];
 
 
