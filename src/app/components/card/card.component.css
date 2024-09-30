@@ -44,4 +44,17 @@
     border-color: #800000;
   }
 
-
+  .iframe-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .iframe-preview {
+    margin: 10px 0;
+  }
+  
+  iframe {
+    width: 100%; /* Set iframe to full width */
+    height: 200px; /* Set a fixed height for preview */
+  }
+  

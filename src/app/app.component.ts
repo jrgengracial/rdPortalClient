@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
 import { CommonModule } from '@angular/common';
-// import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -16,9 +16,10 @@ import { FilterpipePipe } from './filterpipe.pipe';
   standalone: true,
   imports: [RouterOutlet, CommonModule, CardComponent, FooterComponent, NavbarComponent, FormsModule, FilterpipePipe],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+
 })
 export class AppComponent {
-  title : string = "Rd Pawnshop ";
+  title : string = "Rd Pawnshop";
  
 }
