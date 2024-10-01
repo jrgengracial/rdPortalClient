@@ -1,0 +1,43 @@
+<!--  Search Bar -->
+<div class="container mt-5">
+    <form name="Search">
+      <div class="input-group">
+        <input 
+          type="text" 
+          class="form-control search-input"  
+          name="search" 
+          placeholder="Search" 
+          aria-label="Search" 
+          [(ngModel)]="searchTerm" 
+          (input)="filterItems()"
+          maxlength="25"
+          aria-describedby="basic-addon1"
+          style="background: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-search&quot; viewBox=&quot;0 0 16 16&quot;><path d=&quot;M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0&quot;/></svg>') no-repeat 10px center; padding-left: 30px;">
+      </div>
+    </form>
+  </div>
+  
+  
+  <div class="container my-5 p-5">
+    <div class="row justify-content-center">
+      <ng-container *ngIf="filteredLists.length > 0; else noResults">
+        <div class="col-md-4 mb-4" *ngFor="let item of filteredLists">
+          <a [href]="item.url" target="_blank" class="card-link">
+          <div class="card h-100 shadow-lg border-0">
+            <img [src]="item.img" class="card-img-top" alt="{{item.name}}" style="object-fit: cover; height: 200px;">
+            <div class="card-body">
+              <h4 class="card-title text-uppercase">{{ item.name }}</h4>      
+            </div>
+          </div>
+        </a>
+        </div>
+      </ng-container>
+    </div>
+    
+    <ng-template #noResults>
+      <div class="no-results-message text-center text-danger">
+        No results found for "{{ searchTerm }}". Please try a different search.
+      </div>
+    </ng-template>
+  </div>
+  
