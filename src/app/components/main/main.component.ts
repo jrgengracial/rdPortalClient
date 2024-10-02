@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FilterpipePipe } from '../../filterpipe.pipe';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../footer/footer.component';
+import { FaqsComponent } from "../faqs/faqs.component";
+
+
 
 
 interface ListItem {
@@ -14,7 +19,7 @@ interface ListItem {
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, FilterpipePipe, FormsModule],
+  imports: [CommonModule, FilterpipePipe, FormsModule, NavbarComponent, FooterComponent, FaqsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -24,7 +29,7 @@ export class MainComponent {
     { name: "E-Purchasing",
       url: "https://portalv3.rdpawnshop.com/EPurchasingV2/Login",
       img: "e-purchase.png"},
-      { name: "KYC",
+    { name: "KYC",
         url: "https://portalv3.rdpawnshop.com/KYC/KYC/Login",
         img: "kyc.png" },
         { name: "Online Pledge",
@@ -39,6 +44,7 @@ export class MainComponent {
               { name: "RD Operation V3",
                  url: "https://portalv2.rdpawnshop.com/RDOperationV3",
                    img: "RDOPSV3.png" },
+                   
   ];
 
 
