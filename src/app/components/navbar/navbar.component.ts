@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "../login/login.component";
 import { CommonModule } from '@angular/common';
-import { ImageCroppedEvent } from 'ngx-image-cropper';
+
 
 
 
@@ -17,12 +17,15 @@ import { ImageCroppedEvent } from 'ngx-image-cropper';
 })
 export class NavbarComponent {
   profilePic: string | ArrayBuffer | null = null; // Variable to store the profile picture
+  activeLink: string = 'home'; 
   mainContent = {
     title: 'Home',
     body : '' 
   };
 
+  
 changeContent(section: string) : void{
+  this.activeLink = section;
   switch(section){
     case 'home':
       this.mainContent = {
