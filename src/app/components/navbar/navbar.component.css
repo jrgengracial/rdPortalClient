@@ -10,26 +10,6 @@
     margin-top: 0; /* Remove any default margin at the top */
 }
 
-.nav-item {
-    width: 100%; /* Ensure the nav item takes full width */
-  }
-  
-.nav-link {
-    display: block; 
-    width: 100%;    
-    padding: 10px; 
-    text-overflow: ellipsis; 
-    overflow: hidden; /* Hide overflow */
-    white-space: nowrap;
-    text-decoration: none;
-    color: #333; 
-}
-  
-.nav-link.active {
-    background-color: rgba(0, 0, 0, 0.1);/* Style for active link */
-    border-radius: 12px;
-}
-  
 .btn-close{
     margin-right: 10px;
 }
